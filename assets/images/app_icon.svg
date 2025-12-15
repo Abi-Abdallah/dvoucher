@@ -1,0 +1,38 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2E7D32;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4CAF50;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1024" height="1024" rx="200" fill="url(#bgGradient)"/>
+  
+  <!-- Voucher/Ticket Shape -->
+  <rect x="200" y="300" width="624" height="424" rx="30" fill="white" opacity="0.95"/>
+  
+  <!-- Perforated edges (dotted line effect) -->
+  <circle cx="200" cy="400" r="8" fill="#2E7D32"/>
+  <circle cx="200" cy="500" r="8" fill="#2E7D32"/>
+  <circle cx="200" cy="600" r="8" fill="#2E7D32"/>
+  <circle cx="824" cy="400" r="8" fill="#2E7D32"/>
+  <circle cx="824" cy="500" r="8" fill="#2E7D32"/>
+  <circle cx="824" cy="600" r="8" fill="#2E7D32"/>
+  
+  <!-- Letter D -->
+  <path d="M 450 400 L 450 624 L 550 624 Q 600 624 600 574 L 600 450 Q 600 400 550 400 Z" 
+        fill="#2E7D32" opacity="0.9"/>
+  <path d="M 480 430 L 480 594 L 570 594 Q 590 594 590 574 L 590 450 Q 590 430 570 430 Z" 
+        fill="white"/>
+  
+  <!-- Discount/Tag symbol -->
+  <circle cx="700" cy="450" r="50" fill="#4CAF50"/>
+  <text x="700" y="465" font-family="Arial, sans-serif" font-size="40" font-weight="bold" 
+        fill="white" text-anchor="middle">%</text>
+  
+  <!-- Decorative elements -->
+  <circle cx="300" cy="500" r="15" fill="#4CAF50" opacity="0.6"/>
+  <circle cx="750" cy="550" r="12" fill="#2E7D32" opacity="0.5"/>
+</svg>
+

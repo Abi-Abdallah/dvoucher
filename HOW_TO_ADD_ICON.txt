@@ -1,0 +1,56 @@
+HOW TO ADD YOUR APP ICON - STEP BY STEP
+========================================
+
+STEP 1: Create Your Icon Image
+-------------------------------
+You need a PNG image that is 1024x1024 pixels.
+
+Option A - Use Online Tools (Easiest):
+1. Go to https://www.canva.com/ (free account)
+2. Click "Create a design"
+3. Choose "Custom size" and enter 1024 x 1024 pixels
+4. Design your icon:
+   - Add green background (#2E7D32)
+   - Add voucher/ticket shape
+   - Add letter "D" or discount symbol
+5. Click "Download" and choose PNG format
+6. Save the file
+
+Option B - Use the SVG Template:
+1. Open the file: assets/images/app_icon.svg
+2. Open it in a browser or image editor
+3. Export/Save as PNG (1024x1024)
+4. Save the file
+
+Option C - Use Any Image Editor:
+- GIMP (free): https://www.gimp.org/
+- Photoshop
+- Paint.NET (free)
+- Any image editor you have
+
+STEP 2: Save the Icon File
+---------------------------
+1. Make sure your icon is named: app_icon.png
+2. Make sure it's 1024x1024 pixels
+3. Copy the file to: assets/images/app_icon.png
+
+The full path should be:
+C:\flutter\Dvoucher\assets\images\app_icon.png
+
+STEP 3: Verify It's Working
+----------------------------
+1. Open your project in VS Code or Android Studio
+2. Check that the file exists at: assets/images/app_icon.png
+3. The path is already configured in pubspec.yaml
+4. Run: flutter pub get
+5. Rebuild your app
+
+That's it! Your icon is ready to use.
+
+QUICK CHECKLIST:
+☐ Icon is 1024x1024 pixels
+☐ File is named app_icon.png
+☐ File is in assets/images/ folder
+☐ Run flutter pub get
+☐ Rebuild app
+

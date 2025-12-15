@@ -1,0 +1,54 @@
+ANDROID LAUNCHER ICON SETUP
+===========================
+
+Your icon path: assets/icons/app_icon.png ✅
+
+Android Launcher Icon Sizes Needed:
+------------------------------------
+You need to create different sizes for each mipmap folder:
+
+1. mipmap-mdpi/ic_launcher.png     → 48x48 pixels
+2. mipmap-hdpi/ic_launcher.png    → 72x72 pixels
+3. mipmap-xhdpi/ic_launcher.png   → 96x96 pixels
+4. mipmap-xxhdpi/ic_launcher.png  → 144x144 pixels
+5. mipmap-xxxhdpi/ic_launcher.png → 192x192 pixels
+
+HOW TO CREATE THE SIZES:
+------------------------
+Option 1 - Online Tool (Easiest):
+1. Go to: https://www.appicon.co/
+2. Upload your 1024x1024 app_icon.png
+3. It will generate all Android sizes automatically
+4. Download and extract the Android icons
+5. Copy each ic_launcher.png to the correct mipmap folder
+
+Option 2 - Manual Resize:
+1. Open your app_icon.png (1024x1024) in any image editor
+2. Resize to each size:
+   - 48x48 → save as android/app/src/main/res/mipmap-mdpi/ic_launcher.png
+   - 72x72 → save as android/app/src/main/res/mipmap-hdpi/ic_launcher.png
+   - 96x96 → save as android/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+   - 144x144 → save as android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+   - 192x192 → save as android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+
+Option 3 - Use GIMP/Photoshop:
+1. Open app_icon.png
+2. Image → Scale Image
+3. Set size to each required size
+4. Export as PNG
+5. Save to correct mipmap folder
+
+FOLDER STRUCTURE:
+-----------------
+android/app/src/main/res/
+  ├── mipmap-mdpi/ic_launcher.png (48x48)
+  ├── mipmap-hdpi/ic_launcher.png (72x72)
+  ├── mipmap-xhdpi/ic_launcher.png (96x96)
+  ├── mipmap-xxhdpi/ic_launcher.png (144x144)
+  └── mipmap-xxxhdpi/ic_launcher.png (192x192)
+
+After placing icons, rebuild your app:
+flutter clean
+flutter pub get
+flutter run
+
